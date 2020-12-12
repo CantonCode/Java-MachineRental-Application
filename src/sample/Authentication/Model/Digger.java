@@ -4,19 +4,20 @@ public class Digger extends Machine {
 
     String maxLiftingWeight;
 
-    public String getMaxLiftingWeight() {
-        return maxLiftingWeight;
-    }
-
-    public void setMaxLiftingWeight(String maxLiftingWeight) {
-        this.maxLiftingWeight = maxLiftingWeight;
-    }
 
     public Digger(){
     }
 
     public Digger(String id,String name,Boolean rented,int costPerDay,String category,String maxLiftingWeight){
         super(id,name,rented,costPerDay,category);
+        this.maxLiftingWeight = maxLiftingWeight;
+    }
+
+    public String getMaxLiftingWeight() {
+        return maxLiftingWeight;
+    }
+
+    public void setMaxLiftingWeight(String maxLiftingWeight) {
         this.maxLiftingWeight = maxLiftingWeight;
     }
 

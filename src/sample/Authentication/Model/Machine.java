@@ -1,14 +1,15 @@
 package sample.Authentication.Model;
 
-import javax.crypto.Mac;
+
 
 public abstract class Machine {
 
     private String id;
     private String name;
     private Boolean rented;
-    private int costPerDay;
     private String category;
+    private int costPerDay;
+
 
     public Machine(){
 
